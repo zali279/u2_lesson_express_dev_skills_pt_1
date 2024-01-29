@@ -25,7 +25,7 @@ As you make progress, be sure to commit and push your progress.
 As always, make the first commit using:
 
 ```
-git add -A
+git add .
 git commit -m "Initial commit"
 git push -u origin main
 ```
