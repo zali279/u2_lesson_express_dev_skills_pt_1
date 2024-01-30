@@ -36,11 +36,19 @@
         <ul>
         <% skills.forEach( (skill) => { %>
             <li>
+            
            <a href ="/skills/<%= skill. id%>"><%= skill.name %></a>
+           
                 - 
             <%= skill. id%>
+            <form action="/skills/<%= skill.id %>?_method=DELETE" method="POST" >
+                <a href="/skills/<%= skill.id %>/edit">Edit</a>
+
+                <button type="submit">DEL</button>
+                </form>
             </li>
         <% }); %>
         </ul>
+        <a href="skills/new">Add to skills </a>
     </body>
   <html>
